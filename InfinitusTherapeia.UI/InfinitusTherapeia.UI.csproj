@@ -16,4 +16,8 @@
       <Folder Include="wwwroot\Images\Favicon\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\Home\HomeComponent.razor" />
+    </ItemGroup>
+
 </Project>

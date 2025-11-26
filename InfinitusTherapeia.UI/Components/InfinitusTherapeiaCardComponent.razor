@@ -1,0 +1,28 @@
+@inherits InfinitusTherapeiaComponentBase
+
+<MudCard Elevation="3">
+    <MudCardHeader Style="@CardHeaderStyle">
+        <MudStack Spacing="1">
+            <MudStack AlignItems="AlignItems.Center"
+                      Row="true">
+                <MudText Typo="Typo.h4">
+                    @CardHeaderText
+                </MudText>
+            </MudStack>
+        </MudStack>
+    </MudCardHeader>
+    
+    @if (CardContentFragment is not null)
+    {
+        <MudCardContent Class="pa-4" Style="background-color: var(--mud-palette-secondary)">
+            @CardContentFragment
+        </MudCardContent>
+    }
+    
+    @if (CardActionsFragment is not null)
+    {
+        <MudCardActions>
+            @CardActionsFragment
+        </MudCardActions>   
+    }
+</MudCard>

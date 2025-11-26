@@ -8,9 +8,10 @@ public static class InfinitusTherapeiaTheme
     {
         PaletteLight = new PaletteLight
         {
-            Primary = "#A42E8B",
-            Secondary = "#DEDEDC", 
-            Tertiary = "#3D2587"
+            Primary = "#77005b",
+            Secondary = "#ffeeff", 
+            Tertiary = "#b43398",
+            Background = "#1a000e"
         }
     };
 }
