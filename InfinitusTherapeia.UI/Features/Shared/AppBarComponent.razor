@@ -1,0 +1,37 @@
+@using InfinitusTherapeia.UI.Constants
+@inherits InfinitusTherapeia.UI.Components.InfinitusTherapeiaComponentBase
+
+<MudAppBar Color="Color.Primary"  
+           Gutters="false"
+           Style="height: 9%">
+    <MudStack Class="py-2 pl-2"
+              Row="true">
+        <MudImage Alt="Company Logo" 
+                  Src="Images/Branding/company-logo.png"
+                  Style="height: 50%; width: 6%"/>
+        <MudStack AlignItems="AlignItems.Center"
+                  Row="true"
+                  Spacing="5">
+            <MudLink Color="Color.Secondary"
+                     Href="@PageNavigation.Home"
+                     Typo="Typo.button"
+                     Underline="Underline.Hover">
+                Home
+            </MudLink>
+            
+            <MudLink Color="Color.Secondary"
+                     Href="@PageNavigation.About"
+                     Typo="Typo.button"
+                     Underline="Underline.Hover">
+                About
+            </MudLink>
+            
+            <MudLink Color="Color.Secondary"
+                     Href="@PageNavigation.ContactUs"
+                     Typo="Typo.button"
+                     Underline="Underline.Hover">
+                Contact
+            </MudLink>
+        </MudStack>
+    </MudStack>
+</MudAppBar>

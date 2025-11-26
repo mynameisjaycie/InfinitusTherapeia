@@ -1,0 +1,25 @@
+﻿@using InfinitusTherapeia.UI.Features.Shared
+@using InfinitusTherapeia.UI.Theme
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="InfinitusTherapeiaTheme.MudTheme"/>
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<PageTitle>Infinitus Therapeia, LLC</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.False">
+    <MudLayout Class="d-flex flex-column">
+        <MudMainContent Class="flex-auto">
+            <MudGrid>
+                <MudItem xs="12">
+                    <AppBarComponent/>
+                </MudItem>
+                <MudItem xs="12">
+                    @Body
+                </MudItem>
+            </MudGrid>
+        </MudMainContent>
+    </MudLayout>
+</MudContainer>
